@@ -1,0 +1,24 @@
+@import './resets';
+@import './variables';
+
+@mixin flexCenter($direction) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+
+  body {
+  background: $primary-color;
+  color: $text-color;
+}
+
+.login-modal{
+    @include flexCenter(column);
+    width: 50%;
+
+    &_h1{
+        font-weight: map-get($font-weights , bold);
+    }
+}
