@@ -14,8 +14,13 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
 .login-modal_h1 {
   font-weight: 700;
+}
+
+.light {
+  background: white;
+  color: black;
 }/*# sourceMappingURL=main.css.map */

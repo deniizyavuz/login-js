@@ -8,6 +8,12 @@
     flex-direction: $direction;
 }
 
+@mixin theme($light-theme: true) {
+    @if $light-theme {
+        background: lighten($primary-color, 100%);
+        color: darken($text-color, 100%);
+    }
+}
 
   body {
   background: $primary-color;
@@ -16,9 +22,13 @@
 
 .login-modal{
     @include flexCenter(column);
-    width: 50%;
+    width: 80% - 40%;
 
     &_h1{
         font-weight: map-get($font-weights , bold);
     }
+}
+
+.light{
+    @include theme($light-theme: true);
 }
