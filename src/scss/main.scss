@@ -72,12 +72,12 @@ input[type="password"] {
   display: flex;
   border: 2px solid #c4c4c4;
   box-sizing: border-box;
-}
-.valid {
-  border-color: green !important;
-}
-.invalid {
-  border-color: red !important;
+  &.valid {
+    border-color: green;
+  }
+  &.invalid {
+    border-color: red;
+  }
 }
 
 .toast {
